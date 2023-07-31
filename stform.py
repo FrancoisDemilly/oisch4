@@ -9,7 +9,7 @@ from streamlit_folium import st_folium
 #local path
 #image_name = './DSCN0027.jpg'
 #github path
-image_name= 'https://github.com/FrancoisDemilly/oisch4/blob/main/DSCN0027.jpg'
+image_name= 'https://github.com/FrancoisDemilly/oisch4/main/DSCN0027.jpg'
 
 #open image with pillow to display it on the screen with streamlit
 img_display = Image.open(image_name)
