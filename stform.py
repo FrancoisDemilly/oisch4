@@ -6,7 +6,7 @@ from exif import Image as ExifImage
 import folium
 from streamlit_folium import st_folium
 
-image_name = 'DSCN0027.jpg'
+image_name = './DSCN0027.jpg'
 
 #open image with pillow to display it on the screen with streamlit
 img_display = Image.open(image_name)
