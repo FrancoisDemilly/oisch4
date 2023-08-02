@@ -1,7 +1,5 @@
 import streamlit as st
 import os
-from PIL import Image
-from PIL.ExifTags import TAGS
 from exif import Image as ExifImage
 import folium
 from streamlit_folium import st_folium
@@ -9,9 +7,6 @@ from streamlit_folium import st_folium
 
 #image path
 image_name = f'{os.path.abspath("DSCN0027.jpg")}'
-
-#open image with pillow to display it on the screen with streamlit
-img_display = Image.open(image_name)
 
 
 with open(image_name, 'rb') as image_file:
@@ -23,7 +18,8 @@ st.title("Découverte de la Plateforme Collaborative Streamlit")
 
 st.divider()
 st.header("Insertion d'une photographie")
-st.image(img_display, caption='Image avec géolocation')
+#st.image(img_display, caption='Image avec géolocation')
+st.image(image_name, caption='Image avec géolocation')
 
 #vérifions que l'image contient un fichier exif
 #st.write(my_image.has_exif)
