@@ -6,10 +6,9 @@ from exif import Image as ExifImage
 import folium
 from streamlit_folium import st_folium
 
-#local path
-#image_name = './DSCN0027.jpg'
-#github path
-image_name= '/home/francois/Documents/ied/IED - PARIS8 - L1 INFO/Cursus 2020-2021/Semestre 2/Compétences transversales/OutilsInformatiquesCollaboratifs/oisch4/DSCN0027.jpg'
+
+#image path
+image_name = f'{os.path.abspath("DSCN0027.jpg")}'
 
 #open image with pillow to display it on the screen with streamlit
 img_display = Image.open(image_name)
