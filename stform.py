@@ -40,7 +40,7 @@ with st.form("my_form"):
         #impossible de modifier "exif_version"
         if item == "exif_version":
             pass
-        elif type(my_image.get(item)) == str:
+        elif type(my_image.get(item)) == str :
             st.text_input(f"Modifier la valeur **{my_image[item]}** du champ **{item}** du fichier Exif", key=f"{item}")
         elif type(my_image.get(item)) == tuple:
             st.text_input(f"Modifier la valeur **{my_image[item]}** du champ **{item}** du fichier Exif", key=f"{item}") 
